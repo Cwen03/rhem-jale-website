@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Rhem Jale mi Nursing</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <h1>To Rhem Jale 💌</h1>
+    <p>To the girl who changed me completely, I love you.</p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-image">
+      <img src="rhem-photo.jpg" alt="Rhem Jale" />
+    </div>
+    <div class="hero-text">
+      <h2>Meet Rhem Jale</h2>
+      <p>She's the sunshine in my storm, the melody in my silence, and the reason behind every smile I wear.</p>
+    </div>
+  </section>
+
+  <!-- Memories Section -->
+  <section class="memories">
+    <h2>Our Memories</h2>
+    <div class="memory-gallery">
+      <img src="memory1.jpg.jpg" alt="Memory 1" />
+      <img src="memory2.jpg.jpg" alt="Memory 2" />
+    </div>
+  </section>
+
+  <!-- Slideshow Section -->
+  <section class="slideshow">
+    <h2>LOVE OF MY LIFE</h2>
+    <div class="slider">
+      <div class="slides fade">
+        <img src="slide1.jpg.png" alt="Slide 1" />
+      </div>
+      <div class="slides fade">
+        <img src="slide2.jpg.jpg" alt="Slide 2" />
+      </div>
+      <div class="slides fade">
+        <img src="slide3.jpg.jpg" alt="Slide 3" />
+      </div>
+      <div class="nav-buttons">
+        <button onclick="plusSlides(-1)">Prev</button>
+        <button onclick="plusSlides(1)">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Section -->
+  <section class="message">
+    <h2>My Letter to You</h2>
+    <div class="letter-box">
+      <p>
+        Dear Rhem,<br><br>
+        From the moment I met you, everything changed. your laughter became my favorite sound, you're the only thing what's keeping me alive langga, know that I'm right here permi sa imoha things might change but I hope it won't keep us apart.<br><br>
+        Forever yours,<br>
+        Cwen 💖
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with love by Cwen 💌</p>
+  </footer>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slides");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
